@@ -3,19 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Olivos Restaurant</title>
+	<title>Menú Olivos Restaurant</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="icon" type="image/png" href="indexIMG/favicon.png">
+	<link rel="icon" type="image/png" href="indexIMG/favicon.png">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/26da6e5d31.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <header>
 		<h1 class="Letra">Olivos Restaurant</h1>
 		<h4 class="Letra2">Tu mejor opción</h4>
 </header>
-<body class="backcolor">
-    <nav class="bar1">
+<body class="backcolor">	
+	<nav class="bar1">
         <div class="logo">
         <img src="indexIMG/carrousel1.jpg" alt="Olivos Restaurant">
         </div>
@@ -43,7 +42,6 @@
         height: 65px;
         padding: 5px 10%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
     }
     
     .nav-links {
@@ -53,7 +51,6 @@
         gap: 15px;
         transition: all 2s ease;
         justify-content: center;
-        z-index: 1100; /* Asegura que la barra de navegación esté por encima de otros elementos */
     }
     
     .nav-links li a {
@@ -62,6 +59,7 @@
         color: black;
         font-family: sans-serif;;
         padding: 10px 20px;
+
         
     }
     .nav-links li a:hover {
@@ -69,10 +67,10 @@
         text-decoration: underline;
         font-size: 20px;
         background-color: white;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
     }
     .menu-toggle {
-        display: block;
+        display: none;
         font-size: 24px;
         background-color: #C0392B;
         border: none;
@@ -80,7 +78,6 @@
         border-radius: 3px;
         padding-top: 1%;
         padding-bottom: 1%;
-
     }
     
     @media (max-width: 1024px) {
@@ -121,69 +118,179 @@
                 }
             });
         </script>
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="indexIMG/carrousel1.jpg" class="d-block w-100" alt="Imagen 1">
-            </div>
-            <div class="carousel-item">
-                <img src="indexIMG/carrousel2.jpg" class="d-block w-100" alt="Imagen 2">
-            </div>
-            <div class="carousel-item">
-                <img src="indexIMG/carrousel3.jpg" class="d-block w-100" alt="Imagen 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-    </div>
-    <!-- Enlace a Bootstrap JS para funcionalidad -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<main>
+		<section class="img">
+			<div>
+				<h2 id="subTema">Para Refrescarse</h2>
+				<nav class="bar2">
+				<ul>
+					<li>Refresco de frutas naturales-$1.50</li>
+					<li>Licuados de frutas naturales-$2.00</li>
+					<li>Frozen de frutas-$3.00</li>
+					<li>Te helado-$1.50</li>
+					<li>Gaseosa-$1.00</li>
+				</ul>
+				</nav>
+			</div>
+			<div class="centrar">
+			<img src="menu/limonada.jpg" class="img-fluid rounded mb-3">
+			</div>
+		</section>
+			<br>
+		<section class="img">	
+			<div>
+				<h2 id="subTema">Cerveza Nacional</h2>
+				<nav class="bar2">
+					<ul>
+						<li>Suprema-$1.75</li>
+						<li>Pilsener-$1.50</li>
+						<li>Golden verde-$1.50</li>
+						<li>Mix de michelada-$1.50</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="centrar">
+				<img src="menu/pilsener.jpg" class="img-fluid rounded mb-3">
+			</div>
+		</section>
+	
+		<section class="img">
+			<div>
+				<h2 id="subTema">Nuestros Asados</h2>
+				<nav class="bar2">	
+					<ul>
+						<li>Churrasco típico especial 6 onz-$8.75</li>
+						<li>Angelina 6 onz en salsa de jalapeños-$8.50</li>
+						<li>Parrillada Especial-$9.75</li>
+						<li>Angel ina de 6 onz-$7.50</li>
+						<li>Angelina de 12 onz-$12.00</li>
+						<li>Angelina en salsa de hongos-$8.50</li>
+						<li>Lomo rollizo sin solomo 6 onz-$9.00</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="centrar">
+				<img src="menu/parrillada.jpg" class="img-fluid rounded mb-3" width="300" height="225">
+			</div>
+			
+		</section>
+			<h5 class="especif">Tipico: frijoles fritos, platanos, cajada y aguacate</h5>
+		<section class="img">
+			<div>
+				<h2 id="subTema">Aves</h2>
+				<nav class="bar2">
+				<ul>
+					<li>Gallina india a la parrilla-$7.95</li>
+					<li>Combo completo de gallina india-$9.95</li>
+					<li>Pollo a la parrilla-$6.75</li>
+					<li>Pollo encebollado-$7.75</li>
+					<li>Pollo a la crema-$7.75</li>
+					<li>Filete de pollo rellena en salsa de queso-$7.95</li>
+					<li>Filete de pollo en salsa de champiñones-$7.75</li>
+					<li>Filete de pollo en salsa de loroco-$7.75</li>
+					<li>Filete de pollo a la sevillana-$7.75</li>
+					<li>Filete de pollo a la parrilla-$7.00</li>
+				</ul>
+				</nav>
+			</div>
+			<div class="centrar">
+				<img src="menu/gallina.jpg" class="img-fluid rounded mb-3" width="400" height="225">
+			</div>
+		</section>
 
-    <main>
-     <H2 id="subTema">Olivos Restaurant</H2>
-         <p>Desde 2019 El restaurante los olivos ha sido el lugar donde muchas familias han vivido sus mejores momentos. 
-            Hemos amenizado desde cumpleaños, bodas, hasta reuniones familiares. En nuestro restaurante ofrecemos una variedad de 
-            platillos que van desde la comida típica de nuestro querido pais, tales como yuca frita, torrejas, nuegados y muchos otros mas. 
-            Hasta opciones internacionales con los platillos para los paladares mas exigentes como cortes de carne, mariscos y pescado, contamos con un amplio menu que definitivamente te encantara.
-            Te invitamos a disfrutar de una experiencia gastronómica única en un ambiente acogedor y familiar. Nuestro equipo está comprometido con la calidad y frescura de los ingredientes, 
-            asegurando que cada platillo sea una delicia que te hara regresar. Además, contamos con un servicio excepcional que hará que tu visita sea inolvidable.
-        </p>
-            <p>Ubicados en el Centro Turístico Puerto San Juan, Suchitoto, El Salvador, te ofrecemos un espacio ideal para disfrutar de la naturaleza y la tranquilidad. 
-                Ven y descubre por qué somos el lugar preferido de muchas familias y amigos para celebrar momentos especiales. ¡Te esperamos con los brazos abiertos!
-            </p>
-            <div class="team">
-            <img src="indexIMG/team.jpg" class="img-fluid mx-auto d-block" alt="Imagen del equipo">
-            </div>
-            <br>
+			<h5 class="especif">Acompañado con arroz y ensalada fresca mixta</h5>
 
-            <p>
-                Los olivos cuenta con variedad de sabores, en los cuales destaca como su plato mas vendido el mar y tierra:
-            </p>
-            <div class="team">
-            <img src="menu/mar y tierra.jpg" class="img-fluid" alt="plato mas vendido">
-            </div>
+		<section class="img">
+			<div>
+				<h2 id="subTema">Sabores del mar</h2>
+			<nav class="bar2">	
+				<ul>
+					<li>Pescado deshuesado y relleno de camaroncillo-$8.50</li>
+					<li>Boca colorada frito-$10.00 </li>
+					<li>Camarón-$9.50</li>
+					<li>Mariscada natural-$14.00-con crema-$15.00</li>
+					<li>Sopa de camarones-$9.50-con crema-$10.00</li>
+					<li>Sopa de pescado-$8.50</li>
+					<li>Filete de Robalo en salsa de camaron-$9.50</li>
+					<li>Filete de Robalo en salsa al ajillo-$8.75</li>
+					<li>Filete de Robalo en salsa de queso-$8.75</li>
+					<li>Filete de Robalo a la plancha-$7.50</li>
+					<li>Filete de Robalo a la sevillana-$8.50</li>
+					<li>Filete de Robalo empanizado-$8.50</li>
+					<li>Langosta rellena de camaroncillo-$17.50</li>
+					<li>Filete de Robalo a la huerta-$8.50</li>
+				</ul>
+			</nav>
+			</div>
+			<div class="centrar">
+				<img src="menu/mariscada.jpg" class="img-fluid rounded mb-3" width="400" height="225">
+			</div>
+		</section>
 
-            <p>Los Olivos ha sido testigo de momentos inolvidables como quince años, bodas entre otros, los cuales ha dejado marcado en la vida de sus clientes con su exelente sabor en ese momento único</p>
+			<h5 class="especif">Acompañados con papa al horno y vegetales del dia</h5>
 
-            <div class="team">
-            <img src="menu/quince.jpg" class="img-fluid" alt="equipo olivos amenizando ">
-            </div>
+		<section class="img">
+			<div>
+				<h2 id="subTema">Menú de los peques</h2>
+			<nav class="bar2">
+				<ul>
+					<li>Pollito deshuesado a la parrilla-$4.95</li>
+					<li>Angelina infantil de 4 onz-$4.95</li>
+					<li>Pechuguitas empanizadas-$4.95</li>
+					<li>Deditos de queso con papas-$5.50</li>
+					<li>Hamburguesas con papas-$4.00</li>
+				</ul>
+			</nav>
+			</div>
+			<div class="centrar">
+				<img src="menu/hamburguesa.jpg" class="img-fluid rounded mb-3" width="300" height="225">
+			</div>
+			
+		</section>
 
-            <h3 id="subTema">¡¡Ven y organiza tu evento con nosotros!! Te esperamos!!</h3>
-            <br>
+			<h5 class="especif">Acompañado con papitas fritas y vegetales segun estación</h5>
 
-    </main>   
-    <footer>
+		<section class="img">
+			<div>
+				<h2 id="subTema">Postres</h2>
+			<nav class="bar2">	
+				<ul>
+					<li>Quesadillas de mi pueblo-$1.75</li>
+					<li>Nuegados con chilate-$2.50</li>
+					<li>Torrejas con chilate-$2.50</li>
+					<li>Tempura-$2.50</li>
+					<li>Flan de coco-$2.50</li>
+					<li>Sorbete-$1.50</li>
+				</ul>
+				</nav>
+			</div>
+			<div class="centrar">
+				<img src="menu/sorbete.jpg" class="img-fluid rounded mb-3" width="300" height="225">
+			</div>			
+		</section>
+			<br>
+		<section class="img">
+			<div>
+			<h2 id="subTema">Bebidas calientes</h2>
+			<nav class="bar2">
+				<ul>
+					<li>Café negro-$0.75-con leche-$1.00</li>
+					<li>Chocolate-$1.00</li>
+					<li>Te (Manzanilla)-$0.75</li>
+				</ul>
+			</nav>
+			</div>
+			<div class="centrar">
+				<img src="menu/CAFE.jpg" class="img-fluid rounded mb-3" width="300" height="225">
+			</div>	
+		</section>
+	</main>
+	<footer>
             <h3>Visitanos, sera todo un placer atenderte!!</h3>
-            <br>
+			<br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d-89.0160793!3d13.945964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6369881532efcd%3A0x4965047bbd65c4dc!2sCentro%20Tur%C3%ADstico%20Puerto%20San%20Juan%2C%20Suchitoto!5e0!3m2!1ses!2ssv!4v1602811461234!5m2!1ses!2ssv" width="375" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <br>
         <div class="siguenos">
-            <br>
             <h4>Síguenos</h4>
             <a href="https://www.facebook.com" target="_blank">
                 <i class="fa-brands fa-facebook"></i>
@@ -200,6 +307,7 @@
             <a href="https://x.com/">
                 <i class="fa-brands fa-x-twitter"></i>
             </a>
+        
         </div>
 
         <br>

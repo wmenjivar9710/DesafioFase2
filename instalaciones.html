@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Olivos Restaurant</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/png" href="indexIMG/favicon.png">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/26da6e5d31.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<header>
+		<h1 class="Letra">Olivos Restaurant</h1>
+		<h4 class="Letra2">Tu mejor opción</h4>
+</header>
+<body class="backcolor">
+    <nav class="bar1">
+        <div class="logo">
+        <img src="indexIMG/carrousel1.jpg" alt="Olivos Restaurant">
+        </div>
+        <button class="menu-toggle">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li></button>
+            <li><a href="menuolivos.html">Menú</a></li></button>
+            <li><a href="promociones.html">Promociones</a></li></button>
+            <li><a href="nosotros.html">Nosotros</a></li></button>
+            <li><a href="instalaciones.html">Instalaciones</a></li></button>
+            <li><a href="contacto.html">Contacto</a></li></button>
+        </ul>
+    </nav>
+    <style>
+    .logo img {
+    height: 50px; /* Ajusta la altura del logo */
+    width: auto; /* Mantiene proporción */
+    display: block;
+}
+    .bar1 {
+    margin: 0;
+    background-color: #d0fb7b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 5px 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    padding-top: 17px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    transition: all 2s ease;
+    justify-content: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: sans-serif;;
+    padding: 10px 20px;
+    
+}
+.nav-links li a:hover {
+    color: blue;
+    text-decoration: underline;
+    font-size: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background-color: #C0392B;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+@media (max-width: 1024px) {
+    .nav-links {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        background-color: #d0fb7b;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+    </style>
+    <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        
+        menuToggle.addEventListener("click", function() {
+            navLinks.classList.toggle("active");
+        });
+        
+        // Cierra el menú si el usuario hace clic fuera de él
+        document.addEventListener("click", function(event) {
+            if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
+    </script>
+<main>
+    <div class="container mt-5">
+        <h2 id="subTema">Nuestras Instalaciones</h2>
+        <br>
+        <p>En Olivos Restaurant, nos enorgullece ofrecer un ambiente acogedor y familiar donde puedes disfrutar de una experiencia gastronómica única. 
+            Nuestras instalaciones están diseñadas para brindarte comodidad y un entorno agradable, ideal para compartir momentos especiales con tus seres queridos. 
+            Desde amplios espacios al aire libre hasta áreas interiores acogedoras, tenemos el lugar perfecto para cada ocasión. 
+            Ya sea que estés celebrando un cumpleaños, una boda o simplemente disfrutando de una comida en familia, nuestras instalaciones están preparadas para hacer de tu visita una experiencia inolvidable.
+        </p>
+        <p>Contamos con un amplio espacio al aire libre rodeado de naturaleza, perfecto para disfrutar de la brisa fresca y el sonido de la naturaleza mientras 
+            saboreas nuestros deliciosos platillos.
+        </p>
+
+    <div class="container mt-4">
+        <div class="row g-3">
+            <!-- Galería de imágenes -->
+                <div class="col-6 col-md-4">
+                    <img src="instalacionesIMG/Instalaciones1.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="0">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="instalacionesIMG/Instalaciones2.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="1">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="instalacionesIMG/instalaciones3.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="2">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="instalacionesIMG/instalaciones4.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="3">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="instalacionesIMG/Instalaciones5.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="4">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="instalacionesIMG/instalaciones6.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="5">
+                </div>
+        </div>
+    </div>
+    <br><br>
+    <style>
+        .gallery-img {
+            border-radius: 5px; /* Bordes redondeados */
+            transition: transform 0.3s ease-in-out; /* Animación de hover */
+        }
+    
+        .gallery-img:hover {
+            transform: scale(1.1); /* Aumento de tamaño en hover */
+        }
+    </style>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered w-100"> <!-- w-100 para ocupar todo el ancho -->
+            <div class="modal-content m-0 border-0 bg-transparent"> <!-- Sin bordes ni margen -->
+                <div class="modal-body text-center p-0">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal"></button>
+                    <img id="modalImage" class="img-fluid large-modal-img" src="">
+                    <div class="position-absolute w-100 d-flex justify-content-between align-items-center">
+                        <button id="prevBtn" class="btn btn-light btn-lg">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button id="nextBtn" class="btn btn-light btn-lg">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const galleryImages = document.querySelectorAll(".gallery-img");
+        const modalImage = document.getElementById("modalImage");
+        let currentIndex = 0;
+    
+        galleryImages.forEach((img, index) => {
+            img.addEventListener("click", function () {
+                modalImage.src = this.src;
+                currentIndex = index;
+            });
+        });
+    
+        document.getElementById("prevBtn").addEventListener("click", function () {
+            if (currentIndex > 0) {
+                currentIndex--;
+                modalImage.src = galleryImages[currentIndex].src;
+            }
+        });
+    
+        document.getElementById("nextBtn").addEventListener("click", function () {
+            if (currentIndex < galleryImages.length - 1) {
+                currentIndex++;
+                modalImage.src = galleryImages[currentIndex].src;
+            }
+        });
+    </script>
+    
+    
+</main>
+<footer>
+        <h3>Visitanos, sera todo un placer atenderte!!</h3>
+        <br>
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d-89.0160793!3d13.945964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6369881532efcd%3A0x4965047bbd65c4dc!2sCentro%20Tur%C3%ADstico%20Puerto%20San%20Juan%2C%20Suchitoto!5e0!3m2!1ses!2ssv!4v1602811461234!5m2!1ses!2ssv" allowfullscreen loading="lazy"></iframe>
+    <br>
+    <div class="siguenos">
+        <br>
+        <h4>Síguenos</h4>
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.whatsapp.com" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.tiktok.com/es/" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://x.com/">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+    </div>
+
+    <br>
+    <h6>Ubicación: Centro Turístico Puerto San Juan, Suchitoto</h6>
+    <h6>Teléfono: +503 7681 1363</h6>
+    <h6>Olivos Restaurant | vgarcia.casco@gmail.com | Todos los derechos reservados</h6>
+</footer>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
