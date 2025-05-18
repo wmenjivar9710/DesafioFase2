@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/png" href="indexIMG/favicon.png">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/26da6e5d31.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <header>
 		<h1 class="Letra">Olivos Restaurant</h1>
@@ -132,7 +133,7 @@
 				</ul>
 				</nav>
 			</div>
-			<div class="centrar">
+			<div class="col-6 col-md-4">
 			<img src="menu/limonada.jpg" class="img-fluid rounded mb-3">
 			</div>
 		</section>
@@ -149,8 +150,8 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="centrar">
-				<img src="menu/pilsener.jpg" class="img-fluid rounded mb-3">
+			<div class="col-6 col-md-4">
+				<img src="menu/pilsener.jpg" class="img-fluid gallery-img" data-bs-toggle="modal">
 			</div>
 		</section>
 	
@@ -169,8 +170,8 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="centrar">
-				<img src="menu/parrillada.jpg" class="img-fluid rounded mb-3">
+			<div class="col-6 col-md-4">
+				<img src="menu/parrillada.jpg" class="img-fluid gallery-img" data-bs-toggle="modal">
 			</div>
 			
 		</section>
@@ -193,8 +194,8 @@
 				</ul>
 				</nav>
 			</div>
-			<div class="centrar">
-				<img src="menu/gallina.jpg" class="img-fluid rounded mb-3">
+			<div class="col-6 col-md-4">
+				<img src="menu/gallina.jpg" class="img-fluid gallery-img" data-bs-toggle="modal">
 			</div>
 		</section>
 
@@ -222,8 +223,8 @@
 				</ul>
 			</nav>
 			</div>
-			<div class="centrar">
-				<img src="menu/mariscada.jpg" class="img-fluid rounded mb-3">
+			<div class="col-6 col-md-4">
+				<img src="menu/mariscada.jpg" class="img-fluid gallery-img" data-bs-toggle="modal">
 			</div>
 		</section>
 
@@ -242,8 +243,8 @@
 				</ul>
 			</nav>
 			</div>
-			<div class="centrar">
-				<img src="menu/hamburguesa.jpg" class="img-fluid rounded mb-3">
+			<div class="col-6 col-md-4">
+				<img src="menu/hamburguesa.jpg" class="img-fluid gallery-img" data-bs-toggle="modal">
 			</div>
 			
 		</section>
@@ -264,8 +265,8 @@
 				</ul>
 				</nav>
 			</div>
-			<div class="centrar">
-				<img src="menu/sorbete.jpg" class="img-fluid rounded mb-3">
+			<div class="col-6 col-md-4">
+				<img src="menu/sorbete.jpg"class="img-fluid gallery-img" data-bs-toggle="modal">
 			</div>			
 		</section>
 			<br>
@@ -280,10 +281,37 @@
 				</ul>
 			</nav>
 			</div>
-			<div class="centrar">
-				<img src="menu/CAFE.jpg" class="img-fluid rounded mb-3">
+			<div class="col-6 col-md-4">
+				<img src="menu/CAFE.jpg" class="img-fluid gallery-img" data-bs-toggle="modal">
 			</div>	
 		</section>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const galleryImages = document.querySelectorAll(".gallery-img");
+        const modalImage = document.getElementById("modalImage");
+        let currentIndex = 0;
+    
+        galleryImages.forEach((img, index) => {
+            img.addEventListener("click", function () {
+                modalImage.src = this.src;
+                currentIndex = index;
+            });
+        });
+    
+        document.getElementById("prevBtn").addEventListener("click", function () {
+            if (currentIndex > 0) {
+                currentIndex--;
+                modalImage.src = galleryImages[currentIndex].src;
+            }
+        });
+    
+        document.getElementById("nextBtn").addEventListener("click", function () {
+            if (currentIndex < galleryImages.length - 1) {
+                currentIndex++;
+                modalImage.src = galleryImages[currentIndex].src;
+            }
+        });
+    </script>
 	</main>
 	<footer>
             <h3>Visitanos, sera todo un placer atenderte!!</h3>
