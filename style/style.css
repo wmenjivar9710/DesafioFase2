@@ -138,6 +138,8 @@ footer{
 	animation-range: entry 0% cover 50%;
 	animation-timeline: view();
 	animation: fade-izquierda cubic-bezier(0, 0, 0.01, 0.46); /* animación con curva personalizada */
+	width: 300px;
+	height: 250px;
 }
 @keyframes fade-izquierda{
 	0% {
