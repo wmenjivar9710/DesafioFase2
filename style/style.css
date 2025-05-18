@@ -194,3 +194,25 @@ iframe {
 	background: transparent;
 	border: none;
 }
+.contMenu{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+.textMenu{
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+	height: auto;
+	widht: auto;
+}
+.imgMenu{
+	order:0;
+  flex:0 1 auto;
+  align-self:auto;
+  height:auto;
+  width:auto50f;
+}
