@@ -65,6 +65,14 @@ button :hover {
 	text-decoration: underline overline;
 	padding: 25px;
 }
+#subTema-1{
+	color: darkolivegreen;
+	font-family: tahoma;
+	text-align: center;
+	height: 65px;
+	text-decoration: underline overline;
+	padding-bottom: 20px;
+}
 p, .container mt-5{
 	text-align: justify;
 	font-family: arial;
