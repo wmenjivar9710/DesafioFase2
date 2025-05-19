@@ -19,6 +19,10 @@ main{
 	padding: 20px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);;
 }
+strong{
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
 button{
 	background-color: #FCF3CF;
 	color: white;
